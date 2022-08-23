@@ -1,0 +1,138 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --bg-techs-hover: #b986a2;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: var(--text-color);
+  }
+
+  .container {
+
+    display: flex;
+    background-color: var(--body-bg-color);
+    gap: 3rem;
+  }
+
+  aside, main { /* LINHAS DE MARCAÇÃO */
+    border: solid 1px red;
+ 
+  }
+  
+  aside {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: 25%;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .divaside {
+    background-color: var(--bg-cards);
+    padding: 50px;
+    width: 370px;
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .persona-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: solid 2px rgb(7, 163, 7);
+
+  }
+
+  .persona {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .name {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .work {
+    font-size: .7rem;
+    font-weight: 400;
+  }
+
+  .information { /* <ul> */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: .8rem;
+  }
+
+  .lista {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 14px;
+  }
+
+  .lista a {
+    text-decoration: none;
+    line-break: 0;
+  }
+
+  .tech {
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+  .buttons-aside {
+    background-color: var(--bg-techs);
+    border-style: none;
+    width: 5.2rem;
+    height: 2rem;
+    border-radius: 25px;
+    color: var(--body-bg-color);
+  }
+
+  .buttons-aside:hover {
+    color: black;
+    background-color: var(--bg-techs-hover);
+  }
+
+  .ul-exp {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ul-exp li {
+    font-size: .9rem;
+    margin-top: 1.3rem;
+    font-weight: 400;
+  }
+
+  .ul-exp li p {
+    font-size: 1rem;
+    font-weight:700;
+    margin-bottom: .3rem;
+  }

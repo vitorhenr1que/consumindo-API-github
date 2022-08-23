@@ -1,0 +1,34 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --bg-techs-hover: #b986a2;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.divmain {
+    border-radius: 25px;
+    background-color: var(--bg-cards);
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.myprojects {
+display: flex;
+align-items: center;
+margin-top: 2.2rem;
+height: 86px;
+width: 90%;
+}
+
+.myprojects p {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+}
