@@ -21,10 +21,10 @@
     gap: .8rem;
   }
 
-  aside, main { /* LINHAS DE MARCAÇÃO */
+ /* aside, main {  LINHAS DE MARCAÇÃO 
     border: solid 1px red;
  
-  }
+  } */
   
   aside {
     padding: 2rem;
@@ -48,7 +48,7 @@
     flex: 1;
   }
 
-  .persona-photo {
+  .profileImage {
     width: 150px;
     height: 150px;
     object-fit: cover;

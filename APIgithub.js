@@ -1,26 +1,39 @@
-let url = 'https://api.github.com/users/vitorhenr1que/repos'
+let url = 'https://api.github.com/users/vitorhenr1que'
 let arr = []
 async function infoAPI() {
+    const profileImage = document.querySelector('.profileImage')
+
+let getProfile = await axios.get(url).then(d => {
+
+    profileImage.src = `${d.data.avatar_url}`
+
+    axios(d.data.repos_url).then(response => {
+        console.log(response.data)
     
-let pegar = await axios.get(url).then(d => {
-    console.log(d.data)
-    let isPublic = d.data.map(index => { 
-        if (index.visibility === 'public' && arr.length < 4) { // Todos os repositórios publicos vão para array
-            arr.push(index) // Empurrar todos os obj para o array da linha 2 
-        }
-    })
-    for (let i = 0; i < 4; i++){
-        createElem(i)
-    }
+        response.data.map(index => { 
+            if (index.visibility === 'public' && arr.length < 4) { // Todos os repositórios publicos < 4 vão para array
+                arr.push(index) // Empurrar todos os obj para o array da linha 2 
+            }
+        })
+        for (let i = 0; i < 4; i++){
+            createElement(i)
+        }})
+
+    
+
+
 }
 )
 
 }
 infoAPI()
 
+
+
+
 // Criação de elementos
 
-function createElem(num){
+function createElement(num){
     // Box-Projeto
     let projectContainer = document.querySelector('.projetos-container')
     let projeto = document.createElement('div')
