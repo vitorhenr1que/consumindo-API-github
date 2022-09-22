@@ -1,0 +1,11 @@
+let Rogery = 31
+
+
+function diminuir () {
+    Rogery = Rogery - 1
+        console.log(Rogery)
+}
+while (Rogery > 2) {
+    
+    setInterval(diminuir, 1000)
+}

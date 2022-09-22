@@ -1,0 +1,82 @@
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --bg-techs-hover: #b986a2;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.divmain {
+    border-radius: 25px;
+    background-color: var(--bg-cards);
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.myprojects {
+display: flex;
+align-items: center;
+margin-top: 2.2rem;
+height: 86px;
+width: 90%;
+}
+
+.myprojects p {
+    margin-left: 3rem;
+    font-size: 1.3rem;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-evenly;
+
+}
+
+.projeto {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 37rem;
+    height: 11rem;
+    gap: 1rem;
+    background-color: var(--bg-cards);
+    border-radius: 20px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+    width: 30vw;
+}
+
+.projeto img{
+height: 14px;
+}
+.header-box {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+}
+.footer-box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: .3rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+
+}
+
+.footer-box div {
+    width: 100%;
+    text-align: right;
+}
+
