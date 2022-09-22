@@ -1,4 +1,4 @@
-# eSports Duo
+# Consumindo API GitHub
 
 ![APIgithub](https://user-images.githubusercontent.com/85037374/191635071-299272fc-dfaf-4eca-80e6-9cb17ee077db.png)
 
